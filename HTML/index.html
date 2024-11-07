@@ -5,53 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    .loginPage {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: lightblue;
-    }
-
-    section {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .loginForm {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 40%;
-      height: 50%;
-      background-color: white;
-    }
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      let button = document.querySelector(".loginBtn");
-      let username = document.querySelector("#username");
-      let password = document.querySelector("#password");
-
-      button.addEventListener('click', function () {
-        if (username.value === "admin" && password.value === "admin") {
-          window.location.href = './convertor.html';
-        } else {
-          alert("Login Failed");
-        }
-      });
-    });
-  </script>
+  <link rel="stylesheet" href="../CSS/logic.css">
+  <script src="../JS/login.js"></script>
 </head>
 
 <body>
